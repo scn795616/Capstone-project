@@ -1,0 +1,71 @@
+/* Custom styles for the login card */
+.login-card {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+  }
+  
+  .login-header {
+    background-color: green; /* Green background */
+    color: #ffffff; /* White text */
+    padding: 10px;
+    border-radius: 15px 15px 0 0; /* Rounded corners at the top */
+    margin: -20px -20px 20px -20px; /* Full width */
+  }
+  
+  .text-success {
+    color: #28a745 !important; /* Green color for labels */
+  }
+  
+  button.btn-success {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  /* Login.css */
+.message {
+  position: relative;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.success-message {
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  color: #155724;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+}
+
+.message::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+}
+
+.success-message::after {
+  background-color: green;
+  animation: shrink 2s forwards;
+}
+
+.error-message::after {
+  background-color: rgba(237, 50, 53, 0.82);
+  animation: shrink 2s forwards;
+}
+
+@keyframes shrink {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
